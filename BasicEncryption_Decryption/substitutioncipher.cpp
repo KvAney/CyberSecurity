@@ -2,7 +2,7 @@
 
 using namespace std;
 string encrypt(string s,int k){
-    string ans = "";
+    string ans = "";// to return the answer string and returning purpose
 for(char i : s){
 if(i == ' ')    ans+= " ";
 else    ans += char((int(i) + k - int ('a')  )% 26    + int('a'));// firstly making 'a' as origin then we want % to be under 26 and then add 'a' ascii again
